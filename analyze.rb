@@ -1,8 +1,8 @@
 
 
-lines = File.readlines("/home/akim/Task_one/mddrive.xml")
+lines = File.readlines("/home/akim/tasks/mddrive.xml")
 
-File.open("/home/akim/Task_one/mddrive.txt", "w"){ |f| lines.each { |i| f.puts i.split(/"/)[1] if /template name/.match(i)}}
+File.open("/home/akim/tasks/mddrive.txt", "w"){ |f| lines.each { |i| f.puts i.split(/"/)[1] if /template name/.match(i)}}
 
 
 
